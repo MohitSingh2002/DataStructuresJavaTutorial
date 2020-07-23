@@ -26,6 +26,19 @@ public class SinglyLinkedListHelper {
             currentValue = currentValue.next;
         }
     }
+
+    public int displayLength() {
+        if(head == null) {
+            return 0;
+        }
+        int length = 0;
+        ListNode current = head;
+        while (current != null) {
+            length++;
+            current = current.next;
+        }
+        return length;
+    }
     
     static class ListNode {
         private int data;

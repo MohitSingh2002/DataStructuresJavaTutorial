@@ -7,9 +7,13 @@ public class SinglyLinkedList {
 
         SinglyLinkedListHelper singlyLinkedListHelper = new SinglyLinkedListHelper();
 
-        for (int i=1;i<=5;i++) {
+        for (int i=1;i<=10;i++) {
             singlyLinkedListHelper.addList(i);
         }
+
         singlyLinkedListHelper.displayList();
+
+        System.out.println();
+        System.out.println("Length of LinkedList = "+singlyLinkedListHelper.displayLength());
     }
 }
