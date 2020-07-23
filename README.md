@@ -1,2 +1,2 @@
 # DataStructuresJavaTutorial
-A tutorial on Data Structures.
+A tutorial on Data Structures for my deep learning of Data Structures and Algorithms in Java.
