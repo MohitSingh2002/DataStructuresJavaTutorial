@@ -39,6 +39,12 @@ public class SinglyLinkedListHelper {
         }
         return length;
     }
+
+    public void insertFirst(int value) {
+        ListNode newNode = new ListNode(value);
+        newNode.next = head;
+        head = newNode;
+    }
     
     static class ListNode {
         private int data;
@@ -51,21 +57,4 @@ public class SinglyLinkedListHelper {
 
     }
 
-//    public static void main(String[] args) {
-//
-//        SinglyLinkedListHelper singlyLinkedListHelper = new SinglyLinkedListHelper();
-//
-//        SinglyLinkedListHelper.ListNode head = new SinglyLinkedListHelper.ListNode(1);
-//        SinglyLinkedListHelper.ListNode second = new SinglyLinkedListHelper.ListNode(2);
-//        SinglyLinkedListHelper.ListNode third = new SinglyLinkedListHelper.ListNode(3);
-//        SinglyLinkedListHelper.ListNode fourth = new SinglyLinkedListHelper.ListNode(4);
-//        SinglyLinkedListHelper.ListNode fifth = new SinglyLinkedListHelper.ListNode(5);
-//        head.next = second;
-//        second.next = third;
-//        third.next = fourth;
-//        fourth.next = fifth;
-//
-////        singlyLinkedListHelper.displayList(head);
-//    }
-    
 }
