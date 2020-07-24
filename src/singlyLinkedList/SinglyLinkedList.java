@@ -28,5 +28,11 @@ public class SinglyLinkedList {
         System.out.println();
         System.out.println("Length of LinkedList after adding a value at last position = "+singlyLinkedListHelper.displayLength());
 
+        singlyLinkedListHelper.insertAt(30, 3);
+        singlyLinkedListHelper.displayList();
+
+        System.out.println();
+        System.out.println("Length of LinkedList after adding a value at specific position = "+singlyLinkedListHelper.displayLength());
+
     }
 }

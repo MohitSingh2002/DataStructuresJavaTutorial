@@ -58,6 +58,19 @@ public class SinglyLinkedListHelper {
         }
         current.next = newNode;
     }
+
+    public void insertAt(int data, int position) {
+        ListNode toAdd = new ListNode(data);
+        int count = 0;
+        ListNode previous = head;
+        while(count < position-1) {
+            previous = previous.next;
+            count++;
+        }
+        ListNode current = previous.next;
+        previous.next = toAdd;
+        toAdd.next = current;
+    }
     
     static class ListNode {
         private int data;
