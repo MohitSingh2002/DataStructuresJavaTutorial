@@ -52,5 +52,8 @@ public class SinglyLinkedList {
         System.out.println();
         System.out.println("Length of LinkedList after deleting a value at specific position = "+singlyLinkedListHelper.displayLength());
 
+        System.out.println();
+        System.out.println("Is list contains 4 ?\n"+singlyLinkedListHelper.hasElement(4));
+
     }
 }

@@ -108,6 +108,20 @@ public class SinglyLinkedListHelper {
         previous.next = current.next;
         current.next = null;
     }
+
+    public boolean hasElement(int searchData) {
+        if (head == null) {
+            return false;
+        }
+        ListNode current = head;
+        while (current != null) {
+            if (current.data == searchData) {
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
     
     static class ListNode {
         private int data;
