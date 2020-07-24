@@ -80,6 +80,19 @@ public class SinglyLinkedListHelper {
         head = head.next;
         temp.next = null;
     }
+
+    public void deleteLast() {
+        if(head == null) {
+            return;
+        }
+        ListNode last = head;
+        ListNode previousToLast = null;
+        while(last.next != null) {
+            previousToLast = last;
+            last = last.next;
+        }
+        previousToLast.next = null;
+    }
     
     static class ListNode {
         private int data;
