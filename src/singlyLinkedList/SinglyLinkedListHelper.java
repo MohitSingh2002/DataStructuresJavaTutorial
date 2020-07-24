@@ -71,6 +71,15 @@ public class SinglyLinkedListHelper {
         previous.next = toAdd;
         toAdd.next = current;
     }
+
+    public void deleteFirst() {
+        if(head == null) {
+            return;
+        }
+        ListNode temp = head;
+        head = head.next;
+        temp.next = null;
+    }
     
     static class ListNode {
         private int data;

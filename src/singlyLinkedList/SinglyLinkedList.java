@@ -34,5 +34,11 @@ public class SinglyLinkedList {
         System.out.println();
         System.out.println("Length of LinkedList after adding a value at specific position = "+singlyLinkedListHelper.displayLength());
 
+        singlyLinkedListHelper.deleteFirst();
+        singlyLinkedListHelper.displayList();
+
+        System.out.println();
+        System.out.println("Length of LinkedList after deleting first value = "+singlyLinkedListHelper.displayLength());
+
     }
 }
