@@ -93,6 +93,21 @@ public class SinglyLinkedListHelper {
         }
         previousToLast.next = null;
     }
+
+    public void deleteAt(int position) {
+        if(head == null) {
+            return;
+        }
+        ListNode previous = head;
+        int count = 0;
+        while(count < position -1) {
+            previous = previous.next;
+            count++;
+        }
+        ListNode current = previous.next;
+        previous.next = current.next;
+        current.next = null;
+    }
     
     static class ListNode {
         private int data;

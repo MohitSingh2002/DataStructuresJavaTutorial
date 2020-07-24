@@ -46,5 +46,11 @@ public class SinglyLinkedList {
         System.out.println();
         System.out.println("Length of LinkedList after deleting last value = "+singlyLinkedListHelper.displayLength());
 
+        singlyLinkedListHelper.deleteAt(2);
+        singlyLinkedListHelper.displayList();
+
+        System.out.println();
+        System.out.println("Length of LinkedList after deleting a value at specific position = "+singlyLinkedListHelper.displayLength());
+
     }
 }
