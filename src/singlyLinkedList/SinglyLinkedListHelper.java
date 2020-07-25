@@ -27,6 +27,14 @@ public class SinglyLinkedListHelper {
         }
     }
 
+    public void displayListWithHead(ListNode head) {
+        ListNode currentValue = head;
+        while (currentValue != null) {
+            System.out.print(currentValue.data+" ");
+            currentValue = currentValue.next;
+        }
+    }
+
     public int displayLength() {
         if(head == null) {
             return 0;
@@ -121,6 +129,22 @@ public class SinglyLinkedListHelper {
             current = current.next;
         }
         return false;
+    }
+
+    public ListNode reverse() {
+        if (head == null) {
+            return head;
+        }
+        ListNode current = head;
+        ListNode previous = null;
+        ListNode future = null;
+        while (current != null) {
+            future = current.next;
+            current.next = previous;
+            previous = current;
+            current = future;
+        }
+        return previous;
     }
     
     static class ListNode {

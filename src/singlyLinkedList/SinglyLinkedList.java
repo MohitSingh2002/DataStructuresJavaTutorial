@@ -55,5 +55,10 @@ public class SinglyLinkedList {
         System.out.println();
         System.out.println("Is list contains 4 ?\n"+singlyLinkedListHelper.hasElement(4));
 
+        System.out.println();
+        SinglyLinkedListHelper.ListNode reverse = singlyLinkedListHelper.reverse();
+        System.out.println("Reverse LinkedList is :-");
+        singlyLinkedListHelper.displayListWithHead(reverse);
+
     }
 }
