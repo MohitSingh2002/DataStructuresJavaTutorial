@@ -11,6 +11,10 @@ public class SinglyLinkedList {
             singlyLinkedListHelper.addList(i);
         }
 
+        System.out.println();
+        int middle = singlyLinkedListHelper.findMiddle();
+        System.out.println("Middle element is = "+middle);
+
         singlyLinkedListHelper.displayList();
 
         System.out.println();
