@@ -1,4 +1,4 @@
-package singlyLinkedList;
+package singlyLinkedList_1;
 
 public class SinglyLinkedListHelper {
     

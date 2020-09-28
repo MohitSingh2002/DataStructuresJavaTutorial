@@ -1,6 +1,4 @@
-package singlyLinkedList;
-
-import java.util.*;
+package singlyLinkedList_1;
 
 public class SinglyLinkedList {
     public static void main(String[] args) {
